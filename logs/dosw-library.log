@@ -1,0 +1,303 @@
+2026-04-10 05:01:54 [main] INFO  e.e.d.D.DoswLibraryApplication - Starting DoswLibraryApplication using Java 21.0.8 with PID 17760 (E:\DOSW\DOSW\DOSW-Library\target\classes started by ASUS in E:\DOSW\DOSW\DOSW-Library)
+2026-04-10 05:01:54 [main] DEBUG e.e.d.D.DoswLibraryApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-04-10 05:01:54 [main] INFO  e.e.d.D.DoswLibraryApplication - The following 1 profile is active: "mongo"
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.AuditLogRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.BookRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.LoanRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.jpa.repository.JpaBookRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.jpa.repository.JpaLoanRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.jpa.repository.JpaUserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.relational.repository.BookRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.relational.repository.LoanRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.relational.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:01:55 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository defined in @EnableMongoRepositories declared on DataMongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class=org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository defined in @EnableMongoRepositories declared on DataMongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository' since there is already [Root bean: class=org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.core.repository.UserRepository defined in @EnableJpaRepositories declared on DoswLibraryApplication] bound.
+2026-04-10 05:01:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-10 05:01:55 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository defined in @EnableMongoRepositories declared on DataMongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in edu.eci.dosw.DOSW_Library.core.repository.UserRepository defined in @EnableJpaRepositories declared on DoswLibraryApplication and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-04-10 05:46:48 [main] INFO  e.e.d.D.DoswLibraryApplication - Starting DoswLibraryApplication using Java 21.0.8 with PID 18628 (E:\DOSW\DOSW\DOSW-Library\target\classes started by ASUS in E:\DOSW\DOSW\DOSW-Library)
+2026-04-10 05:46:48 [main] DEBUG e.e.d.D.DoswLibraryApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-04-10 05:46:48 [main] INFO  e.e.d.D.DoswLibraryApplication - The following 1 profile is active: "mongo"
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 4 JPA repository interfaces.
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.AuditLogRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.BookRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.LoanRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.core.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.jpa.repository.JpaBookRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.jpa.repository.JpaLoanRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.jpa.repository.JpaUserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.relational.repository.BookRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.relational.repository.LoanRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.relational.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-04-10 05:46:51 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'bookRepository' defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository defined in @EnableMongoRepositories declared on DataMongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class=org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository defined in @EnableMongoRepositories declared on DataMongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'bookRepository' since there is already [Root bean: class=org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.core.repository.BookRepository defined in @EnableJpaRepositories declared on DoswLibraryApplication] bound.
+2026-04-10 05:46:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-10 05:46:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'bookRepository', defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository defined in @EnableMongoRepositories declared on DataMongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in edu.eci.dosw.DOSW_Library.core.repository.BookRepository defined in @EnableJpaRepositories declared on DoswLibraryApplication and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-04-10 05:49:29 [main] INFO  e.e.d.D.DoswLibraryApplication - Starting DoswLibraryApplication using Java 21.0.8 with PID 25296 (E:\DOSW\DOSW\DOSW-Library\target\classes started by ASUS in E:\DOSW\DOSW\DOSW-Library)
+2026-04-10 05:49:29 [main] DEBUG e.e.d.D.DoswLibraryApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-04-10 05:49:29 [main] INFO  e.e.d.D.DoswLibraryApplication - The following 1 profile is active: "mongo"
+2026-04-10 05:49:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:49:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-04-10 05:49:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 6 MongoDB repository interfaces.
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.LoanRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.MongoBookRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.MongoLoanRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.MongoUserRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 05:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 05:49:33 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'bookRepository' defined in edu.eci.dosw.DOSW_Library.core.repository.BookRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot register bean definition [Root bean: class=org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.core.repository.BookRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] for bean 'bookRepository' since there is already [Root bean: class=org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository defined in @EnableMongoRepositories declared on MongoProfileConfiguration] bound.
+2026-04-10 05:49:33 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-10 05:49:33 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'bookRepository', defined in edu.eci.dosw.DOSW_Library.core.repository.BookRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository defined in @EnableMongoRepositories declared on MongoProfileConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-04-10 05:54:38 [main] INFO  e.e.d.D.DoswLibraryApplication - Starting DoswLibraryApplication using Java 21.0.8 with PID 22776 (E:\DOSW\DOSW\DOSW-Library\target\classes started by ASUS in E:\DOSW\DOSW\DOSW-Library)
+2026-04-10 05:54:39 [main] DEBUG e.e.d.D.DoswLibraryApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-04-10 05:54:39 [main] INFO  e.e.d.D.DoswLibraryApplication - The following 1 profile is active: "mongo"
+2026-04-10 05:54:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:54:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-04-10 05:54:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 180 ms. Found 6 MongoDB repository interfaces.
+2026-04-10 05:54:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 05:54:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-10 05:54:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2026-04-10 05:54:48 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-10 05:54:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-10 05:54:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-10 05:54:49 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 9940 ms
+2026-04-10 05:54:49 [main] DEBUG e.e.d.D.s.JwtAuthenticationFilter - JwtAuthenticationFilter initialized
+2026-04-10 05:54:49 [main] DEBUG e.e.d.D.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-10 05:54:49 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-10 05:54:49 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-04-10 05:54:51 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-10 05:54:52 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-04-10 05:54:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-10 05:54:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:librarydb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: LIBRARYDB/PUBLIC
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: 100
+	Pool: DriverManagerConnectionProvider
+	Minimum pool size: 1
+	Maximum pool size: 20
+2026-04-10 05:54:56 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-10 05:54:56 [main] INFO  org.hibernate.orm.jdbc.batch - HHH100501: Automatic JDBC statement batching enabled (maximum batch size 20)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    create table audit_logs (
+        id bigint generated by default as identity,
+        action varchar(20) not null,
+        changed_at timestamp(6) not null,
+        changed_by varchar(100) not null,
+        entity varchar(50) not null,
+        entity_id varchar(100) not null,
+        field varchar(100),
+        ip_address varchar(50),
+        new_value varchar(500),
+        old_value varchar(500),
+        reason varchar(500),
+        primary key (id)
+    )
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    create table books (
+        id varchar(255) not null,
+        author varchar(255) not null,
+        available integer not null,
+        copies integer not null,
+        created_at timestamp(6) not null,
+        description varchar(500),
+        isbn varchar(20) not null,
+        title varchar(255) not null,
+        updated_at timestamp(6) not null,
+        primary key (id)
+    )
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    create table loans (
+        id varchar(255) not null,
+        created_at timestamp(6) not null,
+        due_date timestamp(6) not null,
+        loan_date timestamp(6) not null,
+        return_date timestamp(6),
+        status enum ('ACTIVE','RETURNED') not null,
+        updated_at timestamp(6) not null,
+        book_id varchar(20) not null,
+        user_id varchar(20) not null,
+        primary key (id)
+    )
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    create table users (
+        id varchar(255) not null,
+        created_at timestamp(6) not null,
+        created_by varchar(50),
+        dni varchar(15) not null,
+        email varchar(255),
+        modified_by varchar(50),
+        name varchar(255) not null,
+        password varchar(255) not null,
+        role enum ('LIBRARIAN','USER') not null,
+        status enum ('ACTIVE','BLOCKED','SUSPENDED') not null,
+        updated_at timestamp(6) not null,
+        username varchar(50) not null,
+        primary key (id)
+    )
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists books 
+       drop constraint if exists uk_books_isbn
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists books 
+       add constraint uk_books_isbn unique (isbn)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists books 
+       drop constraint if exists UK65slekpcpi3yn45m0nv2wdr0n
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists books 
+       add constraint UK65slekpcpi3yn45m0nv2wdr0n unique (title, author)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists uk_users_email
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint uk_users_email unique (email)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists uk_users_username
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint uk_users_username unique (username)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists uk_users_dni
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint uk_users_dni unique (dni)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists loans 
+       add constraint fk_loan_book 
+       foreign key (book_id) 
+       references books
+2026-04-10 05:54:56 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists loans 
+       add constraint fk_loan_user 
+       foreign key (user_id) 
+       references users
+2026-04-10 05:54:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-10 05:54:57 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-04-10 05:54:57 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-10 05:54:57 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [E:\DOSW\DOSW\DOSW-Library\target\classes\edu\eci\dosw\DOSW_Library\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService' defined in file [E:\DOSW\DOSW\DOSW-Library\target\classes\edu\eci\dosw\DOSW_Library\core\service\AuthService.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'edu.eci.dosw.DOSW_Library.core.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-04-10 05:54:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-10 05:54:57 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-10 05:54:57 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-10 05:54:57 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in edu.eci.dosw.DOSW_Library.core.service.AuthService required a bean of type 'edu.eci.dosw.DOSW_Library.core.repository.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'edu.eci.dosw.DOSW_Library.core.repository.UserRepository' in your configuration.
+
+2026-04-10 06:06:59 [main] INFO  e.e.d.D.DoswLibraryApplication - Starting DoswLibraryApplication using Java 21.0.8 with PID 20464 (E:\DOSW\DOSW\DOSW-Library\target\classes started by ASUS in E:\DOSW\DOSW\DOSW-Library)
+2026-04-10 06:06:59 [main] DEBUG e.e.d.D.DoswLibraryApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-04-10 06:06:59 [main] INFO  e.e.d.D.DoswLibraryApplication - The following 1 profile is active: "mongo"
+2026-04-10 06:07:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 06:07:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-04-10 06:07:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 6 MongoDB repository interfaces.
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.BookRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.LoanRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.MongoBookRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.MongoLoanRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.MongoUserRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 06:07:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-04-10 06:07:01 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in edu.eci.dosw.DOSW_Library.core.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot register bean definition [Root bean: class=org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.core.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] for bean 'userRepository' since there is already [Root bean: class=org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository defined in @EnableMongoRepositories declared on DoswLibraryApplication] bound.
+2026-04-10 06:07:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-10 06:07:01 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in edu.eci.dosw.DOSW_Library.core.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in edu.eci.dosw.DOSW_Library.persistence.mongodb.repository.UserRepository defined in @EnableMongoRepositories declared on DoswLibraryApplication and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
